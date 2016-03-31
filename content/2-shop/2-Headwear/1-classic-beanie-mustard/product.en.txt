@@ -1,0 +1,43 @@
+T: beanie,headwear
+
+----
+
+N: 1
+
+----
+
+R: 
+
+- 
+  product: classic-beanie-green
+- 
+  product: cash-ruins-everything
+- 
+  product: above-below-pack
+- 
+  product: snood
+
+----
+
+V: 
+
+- 
+  name: Embroidered
+  price: 20
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+- 
+  name: Patch
+  price: 20
+  sku:
+  weight:
+  stock: 1
+  options:
+  description:
+
+----
+
+S: 

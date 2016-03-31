@@ -1,0 +1,71 @@
+Title: MPC
+
+----
+
+Text: T-shirt for Ringz Ov Saturns video documentary series "(link: http://www.ringzovsaturn.com/mpc text: Mind Power Composition)"
+
+----
+
+Tags: screen print,MPC
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: cid
+- 
+  product: classic-sweat-black
+- 
+  product: classic-beanie-mustard
+- 
+  product: sprocket-key-ring
+
+----
+
+Variants: 
+
+- 
+  name: small
+  price: 15
+  sku:
+  weight:
+  stock: 3
+  options:
+  description:
+- 
+  name: Medium
+  price: 15
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+- 
+  name: Large
+  price: 15
+  sku:
+  weight:
+  stock: 3
+  options:
+  description:
+
+----
+
+Soldout: 
+
+----
+
+Seotitle: MPC TShirt Mind Power Composition Documentary Akai
+
+----
+
+Seodesc: T-shirt for Ringz Ov Saturns video documentary series MPC Mind Power Composition

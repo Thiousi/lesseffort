@@ -1,0 +1,43 @@
+Title: Snood
+
+----
+
+Text: Keep your head warm in the cold nights.
+
+----
+
+Tags: accessory
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: above-below-pack
+- 
+  product: underground
+- 
+  product: cid
+- 
+  product: deps-5-panel
+
+----
+
+Variants: 
+
+- 
+  name: one size
+  price: 20
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:

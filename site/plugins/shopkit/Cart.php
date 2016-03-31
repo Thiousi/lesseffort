@@ -7,7 +7,7 @@ class Cart
 	 * Serialized data : array with id and quantity
 	 * @var array
 	 */
-	protected $data = [];
+	public $data = [];
 
 	/**
 	 * @var CartItem[]
@@ -43,6 +43,11 @@ class Cart
 	    return new self($data);
 	}
 
+	public function emptyItems()
+	{
+		s::set('cart',[]);
+	}
+
 	private function __construct(array $data)
 	{
 		$this->data = $data;
@@ -51,17 +56,67 @@ class Cart
 	public function add($id, $quantity)
 	{
 	    $quantityToAdd = $quantity ? $quantity : 1;
-	    $this->data[$id] = array_key_exists($id, $this->data) ?
-	    	$this->data[$id] + $quantityToAdd :
-	    	$quantityToAdd;
+	    $newQty = array_key_exists($id, $this->data) ? $this->data[$id] + $quantityToAdd : $quantityToAdd;
+	    $this->data[$id] = $this->updateQty($id,$newQty);
 	    s::set('cart', $this->data);
+	}
+
+	private function updateQty($id, $newQty) {
+		// $id is formatted uri::variantslug::optionslug
+		$idParts = explode('::',$id);
+		$uri = $idParts[0];
+		$variantSlug = $idParts[1];
+		$optionSlug = $idParts[2];
+
+		// Get combined quantity of this option's siblings
+		$siblingsQty = 0;
+		foreach ($this->data as $key => $qty) {
+			if (strpos($key, $uri.'::'.$variantSlug) === 0 and $key != $id) $siblingsQty += $qty;
+		}
+
+		foreach (page($uri)->variants()->toStructure() as $variant) {
+			if (str::slug($variant->name()) === $variantSlug) {
+
+				// Store the stock in a variable for quicker processing
+				$stock = inStock($variant);
+
+				 // If there are no siblings
+				if ($siblingsQty === 0) {
+					// If there is enough stock
+					if ($stock === true or $stock >= $newQty){
+						return $newQty; }
+					// If there is no stock
+					else if ($stock === false) {
+						return 0; }
+					// If there is insufficient stock
+					else {
+						return $stock; }
+				}
+
+				// If there are siblings
+				else {
+					// If the siblings plus $newQty won't exceed the max stock, go ahead
+					if ($stock === true or $stock >= $siblingsQty + $newQty) {
+						return $newQty; }
+					// If the siblings have already maxed out the stock, return 0 
+					else if ($stock === false or $stock <= $siblingsQty) {
+						return 0; }
+					// If the siblings don't exceed max stock, but the newQty will, reduce newQty to the appropriate level
+					else if ($stock > $siblingsQty and $stock <= $siblingsQty + $newQty) {
+						return $stock - $siblingsQty; }
+				}
+
+			} 
+		}
+
+		// The script should never get to this point
+		return 0;
 	}
 
 	public function remove($id)
 	{
-	    if (!array_key_exists($id, $this->data)) {
-	        return;
-	    }
+	    if (!array_key_exists($id, $this->data)) return;
+	    
 	    $this->data[$id]--;
 	    if ($this->data[$id] < 1) {
 	        $this->delete($id);
@@ -147,7 +202,7 @@ class Cart
 
 	public function getPayPalAction()
 	{
-	  	if(page('shop')->paypal_action() === 'live') {
+	  	if(page('shop')->paypal_action() == 'live') {
 	    	return 'https://www.paypal.com/cgi-bin/webscr';
 	  	}
 	    return 'https://www.sandbox.paypal.com/cgi-bin/webscr';

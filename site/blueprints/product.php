@@ -13,16 +13,24 @@ fields:
   title:
     label: Product title
     type:  text
+  SEOtitle:
+    label: SEOtitle
+    type:  text  
   text:
     label: Description
-    type:  textarea
-  tags:
-    label: Tags
-    help: Comma-separated list of tags
-    type: tags
-  prices:
-    label: Prices
-    help: Each price can have its own SKU, description, and options
+    type:  markdown
+  SEOdesc:
+    label: SEOdesc
+    type:  text 
+  Soldout:
+    label: Soldout?
+    type: select
+    options:
+      soldout: soldout
+      sell: sell 
+  Variants:
+    label: Variants
+    help: Each variant defines a price point, with associated SKU and other options.
     type: structure
     entry: >
       <p style="border-bottom: 1px solid #DDD; margin-bottom: 0.2rem; padding-bottom: 0.2rem">{{name}} <span style="float: right;"><strong>SKU</strong> {{sku}}</span></p>
@@ -32,24 +40,35 @@ fields:
       name:
         label: Variant name
         type:  text
+        width: 1/2
+        help: Usually describes a product's physical qualities (e.g. 16oz bottle, 12x16" canvas)
         required: true
       price:
         label: Price
         type:  text
         validate: num
-        width: 1/2
+        width: 1/4
+        help: Numbers only
         required: true
       sku:
         label: SKU
         type:  text
+        help: Unique product identifier
         width: 1/4
       weight:
         label: Weight
         type: text
-        width: 1/4
+        width: 1/2
+        help: Numbers only
+      stock:
+        label: Quantity in stock
+        type: text
+        width: 1/2
+        help: Leave blank for unlimited stock
       options:
         label: Options
         type: tags
+        help: Options don't affect the price. They will be displayed as a drop-down list.
       description: 
         label: Description
         type: textarea
@@ -63,6 +82,9 @@ fields:
     type: checkbox
     text: Don't charge tax on this product
     width: 1/2
+  tags:
+    label: Tags
+    type: tags
   relatedproducts:
     label: Related products
     type: structure

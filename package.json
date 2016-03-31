@@ -1,0 +1,28 @@
+{
+  "name": "LessEffort",
+  "version": "1.0.0",
+  "description": "LE site 15",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^3.2.0",
+    "grunt-sass": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samnabi/shopkit.git"
+  },
+  "author": "SW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samnabi/shopkit/issues"
+  },
+  "homepage": "https://github.com/samnabi/shopkit"
+}

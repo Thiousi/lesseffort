@@ -1,0 +1,35 @@
+Txn-id: paypal-1456922795-00a4
+
+----
+
+Txn-date: 1456922795
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Under Copenhagen - small (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 5,00
+
+----
+
+Shipping-method: Royal Mail Europe
+
+----
+
+Tax: 0,00

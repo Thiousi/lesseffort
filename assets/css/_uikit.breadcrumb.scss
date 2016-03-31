@@ -1,0 +1,39 @@
+/* ========================================================================
+   Component: Breadcrumb
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+ul.breadcrumb {
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  font-size: 0.001px;
+}
+/* Items
+ ========================================================================== */
+/*
+ * Reset whitespace hack
+ */
+ul.breadcrumb > li {
+  font-size: 1rem;
+  vertical-align: top;
+}
+ul.breadcrumb > li,
+ul.breadcrumb > li > a,
+ul.breadcrumb > li > span {
+  display: inline-block;
+}
+ul.breadcrumb > li:nth-child(n+2):before {
+  content: "/";
+  display: inline-block;
+  margin: 0 8px;
+}
+/*
+ * Disabled
+ */
+ul.breadcrumb > li:not(.uk-active) > span {
+  color: #999999;
+}

@@ -1,0 +1,35 @@
+Txn-id: paypal-1453133062-fb9f
+
+----
+
+Txn-date: 1453133062
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+London Haze - small (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 15.00
+
+----
+
+Shipping-method: US/Canada Air Mail
+
+----
+
+Tax: 0.00

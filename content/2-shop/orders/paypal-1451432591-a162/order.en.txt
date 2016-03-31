@@ -1,0 +1,35 @@
+Txn-id: paypal-1451432591-a162
+
+----
+
+Txn-date: 1451432591
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Cash Ruins Everything - large (1)
+
+----
+
+Subtotal: 25.00
+
+----
+
+Shipping: 15.00
+
+----
+
+Shipping-method: US/Canada Air Mail
+
+----
+
+Tax: 0.00

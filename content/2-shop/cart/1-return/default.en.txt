@@ -1,0 +1,5 @@
+Title: Thank You
+
+----
+
+Text: <div style="text-align: center; margin-bottom: 2rem;">Thanks for your purchases. Any problems please email (link: mailto:info@lesseffort.co.uk text: info@lesseffort.co.uk) or fill in the form on the (link: ../../../contact text: contact page).</div>

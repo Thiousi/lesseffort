@@ -1,5 +1,0 @@
-Title: Cocos [Keeling] Islands
-
-----
-
-countrycode: CC

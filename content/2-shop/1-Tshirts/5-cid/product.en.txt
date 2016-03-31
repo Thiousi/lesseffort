@@ -1,0 +1,71 @@
+Title: CID
+
+----
+
+Text: Graphic baseball t-shirt. Design by (link: https://www.instagram.com/lo_le/ text: Lo Le).
+
+----
+
+Tags: screen print,collaboration
+
+----
+
+Variants: 
+
+- 
+  name: Small
+  price: 28
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Medium
+  price: 28
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Large
+  price: 28
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Extra-Large
+  price: 28
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: underground
+- 
+  product: above-below-pack
+- 
+  product: deps-5-panel
+- 
+  product: mpc
+
+----
+
+Soldout: 

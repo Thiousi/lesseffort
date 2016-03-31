@@ -1,0 +1,84 @@
+Title: Under Copenhagen
+
+----
+
+Text: 
+
+Photo T-shirt in collaboration with (link: http://cphcph.com text: cphcph.com) from the Above and Below series.
+Sublimated front print, neck print and hem tag.
+
+Photo taken on a night out deep below Copenhagen.
+
+----
+
+Tags: sub dye,photograph,collaboration
+
+----
+
+Noshipping: 1
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: cash-ruins-everything
+- 
+  product: london-haze
+- 
+  product: deps-5-panel
+- 
+  product: cid
+
+----
+
+Variants: 
+
+- 
+  name: Small
+  price: 30
+  sku:
+  weight:
+  stock: 4
+  options:
+  description:
+- 
+  name: Medium
+  price: 30
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+- 
+  name: Large
+  price: 30
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Extra-Large
+  price: 30
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+
+----
+
+Soldout: 
+
+----
+
+Seotitle: Under Copenhagen CPH streetwear graffiti ubahn t-shirt
+
+----
+
+Seodesc: Copenhagen photo T-shirt in collaboration with cphcph.com from the Above and Below series. Sublimated front print, neck print and hem tag.

@@ -4,64 +4,83 @@
 
     <?php echo $page->text()->kirbytext() ?>
 
-    <?php if(r::is('post') and get('register')) { ?>
-      <div class="alert">
-        <?php
-          try {
+    <?php if(r::is('post') and get('register') !== null) { ?>
+      <div class="uk-alert uk-alert-warning">
+        <p>
+          <?php
 
-            $user = $site->users()->create(array(
-              'username'  => get('username'),
-              'email'     => get('email'),
-              'password'  => get('password'),
-              'firstName' => get('firstname'),
-              'lastName'  => get('lastname'),
-              'language'  => 'en',
-              'country'   => get('country')
-            ));
+            // Check for duplicate email addresses
+            $duplicate = $site->users()->findBy('email',trim(get('email')));
 
-            echo 'Thanks, your account has been registered! You can now <a href="/login">log in</a>.';
+            if (count($duplicate) === 0) {
+              try {
 
-          } catch(Exception $e) {
+                $user = $site->users()->create(array(
+                  'username'  => trim(get('username')),
+                  'email'     => trim(get('email')),
+                  'password'  => get('password'),
+                  'firstName' => trim(get('firstname')),
+                  'lastName'  => trim(get('lastname')),
+                  'language'  => 'en',
+                  'country'   => get('country')
+                ));
 
-            echo 'Sorry, something went wrong. Please make sure all information is entered correctly, including your email address.';
+                echo l::get('register-success');
 
-          }
-        ?>
+              } catch(Exception $e) {
+
+                echo l::get('register-failure');
+
+              }
+            } else {
+
+                echo l::get('register-failure');
+
+            }
+          ?>
+        </p>
       </div>
     <?php } ?>
 
-    <form method="post">
-      <div class="small-12 medium-6 large-4 columns">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username">
+    <form class="uk-form uk-form-stacked" method="post">
+      <div class="uk-form-row uk-grid">
+        <div>
+          <label for="username"><?php echo l::get('username') ?></label>
+          <input class="uk-form-width-medium" type="text" id="username" name="username">
+        </div>
+        <div>
+          <label for="email"><?php echo l::get('email-address') ?></label>
+          <input class="uk-form-width-medium" type="text" id="email" name="email">
+        </div>
       </div>
-      <div class="small-12 medium-6 large-4 columns">
-        <label for="username">Email address</label>
-        <input type="text" id="email" name="email">
+      <div class="uk-form-row">
+        <label for="password"><?php echo l::get('password') ?></label>
+        <input class="uk-form-width-medium" type="password" id="password" name="password" value="" aria-describedby="passwordHelp">
+        <p class="uk-form-help-block uk-text-muted uk-margin-remove" id="passwordHelp"><?php echo l::get('password-help') ?></p>
       </div>
-      <div class="small-12 large-4 columns">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+      <div class="uk-form-row uk-grid">
+        <div>
+          <label for="firstname"><?php echo l::get('first-name') ?></label>
+          <input class="uk-form-width-medium" type="text" id="firstname" name="firstname">
+        </div>
+        <div>
+          <label for="lastname"><?php echo l::get('last-name') ?></label>
+          <input class="uk-form-width-medium" type="text" id="lastname" name="lastname">
+        </div>
       </div>
-      <div class="small-12 medium-6 large-4 columns">
-        <label for="username">First name</label>
-        <input type="text" id="firstname" name="firstname">
-      </div>
-      <div class="small-12 medium-6 large-4 columns">
-        <label for="username">Last name</label>
-        <input type="text" id="lastname" name="lastname">
-      </div>
-      <div class="small-12 large-4 columns">
-        <label for="country">Country</label>
-        <select name="country" id="country">
+      <div class="uk-form-row">
+        <label for="country"><?php echo l::get('country') ?></label>
+        <select class="uk-form-width-medium" name="country" id="country">
           <?php foreach (page('/shop/countries')->children()->invisible() as $c) { ?>
             <option value="<?php echo $c->slug() ?>"><?php echo $c->title() ?></option>
           <?php } ?>
         </select>
-        <p class="help">To calculate shipping costs</p>
+        <p class="uk-form-help-block uk-text-muted uk-margin-remove"><?php echo l::get('country-help') ?></p>
       </div>
-      <div class="small-12 columns">      
-        <input class="button expand" type="submit" name="register" value="Register">
+      <div class="uk-form-row">
+        <button class="uk-button uk-button-primary uk-button-large uk-form-width-medium" type="submit" name="register">
+          <?php echo l::get('register') ?>
+        </button>
       </div>
     </form>
 

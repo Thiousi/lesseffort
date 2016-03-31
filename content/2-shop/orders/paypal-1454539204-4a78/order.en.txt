@@ -1,0 +1,35 @@
+Txn-id: paypal-1454539204-4a78
+
+----
+
+Txn-date: 1454539204
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Classic Sweat Burgandy - medium (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 0.00
+
+----
+
+Shipping-method: Transport gratuit
+
+----
+
+Tax: 0,00

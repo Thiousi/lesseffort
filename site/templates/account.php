@@ -13,91 +13,98 @@
     <?php echo $page->text()->kirbytext() ?>
 
     <?php if(r::is('post') and get('update')) { ?>
-      <div id="alert" data-alert class="alert-box error" tabindex="0" aria-live="assertive" role="dialogalert">
-        <?php
-          try {
-            $user = $site->user()->update(array(
-              'username'  => get('username'),
-              'email'     => get('email'),
-              'firstname' => get('firstname'),
-              'lastname'  => get('lastname'),
-              'language'  => 'en',
-              'country'   => get('country')
-            ));
-            if (get('password') === '') {
-              // No password change
-            } else {
-              // Update password
+      <div class="uk-alert uk-alert-warning">
+        <p>
+          <?php
+            try {
               $user = $site->user()->update(array(
-                'password'  => get('password')
+                'email'     => get('email'),
+                'firstname' => get('firstname'),
+                'lastname'  => get('lastname'),
+                'language'  => 'en',
+                'country'   => get('country')
               ));
+              if (get('password') === '') {
+                // No password change
+              } else {
+                // Update password
+                $user = $site->user()->update(array(
+                  'password'  => get('password')
+                ));
+              }
+              echo l::get('account-success');
+            } catch(Exception $e) {
+              echo l::get('account-failure');
             }
-            echo 'Your information has been updated.';
-          } catch(Exception $e) {
-            echo 'Sorry, something went wrong. Please make sure all information is entered correctly, including your email address.';
-          }
-        ?>
-        <button href="#" tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+          ?>
+        </p>
       </div>
     <?php } ?>
 
     <?php if(r::is('post') and get('delete')) { ?>
-      <div id="alert" data-alert class="alert-box error" tabindex="0" aria-live="assertive" role="dialogalert">
-        <?php
-          try {
-            $user = $site->user();
-            $user->logout();
-            $site->user($user->username())->delete();
-            go('/register');
-            // echo 'Your account has been deleted.';
-          } catch(Exception $e) {
-            echo 'Sorry, your account couldn\'t be deleted.';
-          }
-        ?>
-        <button href="#" tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+      <div class="uk-alert uk-alert-danger">
+        <p>
+          <?php
+            try {
+              $user = $site->user();
+              $user->logout();
+              $site->user($user->username())->delete();
+              go('/register');
+            } catch(Exception $e) {
+              echo l::get('account-delete-error');
+            }
+          ?>
+        </p>
       </div>
     <?php } ?>
 
-    <form method="post" class="row">
-      <div class="small-12 medium-6 columns">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" value="<?php echo $user->username() ?>">
+    <form class="uk-form uk-form-stacked" method="post">
+      <div class="uk-form-row uk-grid">
+        <div>
+          <label><?php echo l::get('username') ?></label>
+          <input disabled class="uk-form-width-medium" type="text" value="<?php echo $user->username() ?>">
+          <p class="uk-form-help-block uk-text-muted uk-margin-remove"><?php echo l::get('username-no-change') ?></p>
+        </div>
+        <div>
+          <label for="email"><?php echo l::get('email-address') ?></label>
+          <input class="uk-form-width-medium" type="text" id="email" name="email" value="<?php echo $user->email() ?>">
+        </div>
       </div>
-      <div class="small-12 medium-6 columns">
-        <label for="username">Email address</label>
-        <input type="text" id="email" name="email" value="<?php echo $user->email() ?>">
+      <div class="uk-form-row">
+        <label for="password"><?php echo l::get('password') ?></label>
+        <input class="uk-form-width-medium" type="password" id="password" name="password" value="" aria-describedby="passwordHelp">
+        <p class="uk-form-help-block uk-text-muted uk-margin-remove" id="passwordHelp"><?php echo l::get('password-help') ?></p>
       </div>
-      <div class="small-12 columns">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" value="" aria-describedby="passwordHelp">
-        <p class="help" id="passwordHelp">Leave blank to keep it the same</p>
+      <div class="uk-form-row uk-grid">
+        <div>
+          <label for="firstname"><?php echo l::get('first-name') ?></label>
+          <input class="uk-form-width-medium" type="text" id="firstname" name="firstname" value="<?php echo $user->firstname() ?>">
+        </div>
+        <div>
+          <label for="lastname"><?php echo l::get('last-name') ?></label>
+          <input class="uk-form-width-medium" type="text" id="lastname" name="lastname" value="<?php echo $user->lastname() ?>">
+        </div>
       </div>
-      <div class="small-12 medium-4 columns">
-        <label for="username">First name</label>
-        <input type="text" id="firstname" name="firstname" value="<?php echo $user->firstname() ?>">
-      </div>
-      <div class="small-12 medium-4 columns">
-        <label for="username">Last name</label>
-        <input type="text" id="lastname" name="lastname" value="<?php echo $user->lastname() ?>">
-      </div>
-      <div class="small-12 medium-4 columns">
-        <label for="country">Country</label>
-        <select name="country" id="country" aria-describedby="countryHelp">
+      <div class="uk-form-row">
+        <label for="country"><?php echo l::get('country') ?></label>
+        <select class="uk-form-width-medium" name="country" id="country" aria-describedby="countryHelp">
           <?php foreach (page('/shop/countries')->children()->invisible() as $c) { ?>
             <option <?php echo $user->country() === $c->slug() ? 'selected' : '' ?> value="<?php echo $c->slug() ?>"><?php echo $c->title() ?></option>
           <?php } ?>
         </select>
-        <p class="help" id="countryHelp">To calculate shipping costs</p>
+        <p class="uk-form-help-block uk-text-muted uk-margin-remove" id="countryHelp"><?php echo l::get('country-help') ?></p>
       </div>
-      <div class="small-12 large-8 large-pull-2 columns">
-        <input class="button expand" type="submit" name="update" value="Update">
+      <div class="uk-form-row">
+        <button class="uk-button uk-button-primary uk-button-large uk-form-width-medium" type="submit" name="update">
+          <?php echo l::get('update') ?>
+        </button>
       </div>
     </form>
 
-    <h3>Delete account</h3>
-    <p>If you click this button, there's no going back. Your account will be gone forever.</p>
-    <form method="post">
-        <button class="small secondary alert" type="submit" name="delete">Delete my account. Yes, I'm sure.</button>
+    <h3><?php echo l::get('delete-account') ?></h3>
+    <p><?php echo l::get('delete-account-text') ?></p>
+    <form class="uk-form" method="post">
+        <button class="uk-button" type="submit" name="delete"><?php echo l::get('delete-account-verify') ?></button>
     </form>
 
 <?php snippet('footer') ?>

@@ -9,20 +9,25 @@
 ?>
 
 <?php snippet('header') ?>
+<?php snippet('breadcrumb') ?>
+<div class="wrapper row">
+	<section role="main" class="scroll-container">
+			<?php if (isset($slidePath)) { ?>
+				<?php snippet('slideshow.product', ['products' => $products]) ?>
+			<?php } else { ?>
 
-		<?php snippet('breadcrumb') ?>
-
-		<?php if($photo = $page->images()->sortBy('sort', 'asc')->first()) { ?>
-			<div class="row">
-				<img class="small-12 columns" src="<?php echo thumb($photo,array('height'=>300, 'quality'=>90))->dataUri() ?>" title="<?php echo $photo->title() ?>"/>
-			</div>
-		<?php } ?>
+		<h2 class="no-span"><?php echo $page->title()->html() ?></h2>
 		
-		<h1><?php echo $page->title()->html() ?></h1>
 		<?php echo $page->text()->kirbytext() ?>
 
-		<?php snippet('product-list', array('products' => $products)) ?>
+		<?php if($photo = $page->images()->sortBy('sort', 'asc')->first()) { ?>
+			<img src="<?php echo thumb($photo,array('height'=>300, 'quality'=>90))->dataUri() ?>" title="<?php echo $photo->title() ?>"/>
+		<?php } ?>
 
-		<?php snippet('category-list', array('categories' => $categories)) ?>
+		<?php snippet('list.product', ['products' => $products]) ?>
+		
+		<?php e($categories->count() > 0,'<h2>'.l::get('shop-by-category').'</h2>') ?>
+		<?php snippet('list.category', ['categories' => $categories]) ?>
+	<?php } ?>
 
 <?php snippet('footer') ?>

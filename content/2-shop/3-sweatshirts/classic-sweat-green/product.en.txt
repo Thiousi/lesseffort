@@ -1,0 +1,50 @@
+Title: Classic Sweat Green
+
+----
+
+Text: 
+
+----
+
+Tags: 
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 
+
+----
+
+Relatedproducts: 
+
+----
+
+Variants: 
+
+- 
+  name: small
+  price: 30
+  sku:
+  weight:
+  stock: 4
+  options:
+  description:
+- 
+  name: Medium
+  price: 30
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Large
+  price: 30
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:

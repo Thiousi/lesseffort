@@ -1,0 +1,55 @@
+Title: Classic beanie Green
+
+----
+
+Text: mustard beanie with either embroidered graphic or screen printed patch with graphic.
+
+----
+
+Tags: beanie,headwear
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: above-below-pack
+- 
+  product: classic-beanie-mustard
+- 
+  product: classic-sweat-black
+- 
+  product: snood
+
+----
+
+Variants: 
+
+- 
+  name: Embroidered
+  price: 20
+  sku:
+  weight:
+  stock: 1
+  options:
+  description:
+- 
+  name: Patch
+  price: 20
+  sku:
+  weight:
+  stock: 1
+  options:
+  description:
+
+----
+
+Soldout: 

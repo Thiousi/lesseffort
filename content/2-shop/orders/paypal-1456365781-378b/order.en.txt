@@ -1,0 +1,35 @@
+Txn-id: paypal-1456365781-378b
+
+----
+
+Txn-date: 1456365781
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Under Copenhagen - small (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 15,00
+
+----
+
+Shipping-method: US/Canada Air Mail
+
+----
+
+Tax: 0,00

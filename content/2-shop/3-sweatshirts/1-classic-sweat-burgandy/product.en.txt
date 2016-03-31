@@ -1,0 +1,63 @@
+Title: Classic Sweat Burgandy
+
+----
+
+Text: 
+
+----
+
+Tags: 
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: classic-sweat-black
+- 
+  product: above-below-pack
+- 
+  product: deps-5-panel
+- 
+  product: snood
+
+----
+
+Variants: 
+
+- 
+  name: small
+  price: 30
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+- 
+  name: Medium
+  price: 30
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+- 
+  name: Large
+  price: 30
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+
+----
+
+Soldout: 

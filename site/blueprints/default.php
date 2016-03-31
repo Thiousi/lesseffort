@@ -16,4 +16,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
+    type:  markdown
+  caption:
+    label: Caption
+    type: text  

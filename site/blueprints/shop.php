@@ -11,7 +11,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
+    type:  markdown
   featured:
     label: Featured products
     help:  Featured products show up in the sidebar with a one-click "buy now" button
@@ -91,7 +91,8 @@ fields:
   tax:
     label: Tax rates
     type: structure
-    entry: {{rate}}
+    entry: >
+      {{rate}}<br />{{countries}}
     fields:
       rate:
         label: Tax rate
@@ -146,7 +147,4 @@ fields:
     default: sandbox
     width: 1/2
     required: true
-  license-shopkit:
-    label: Shopkit license key
-    type: text
 

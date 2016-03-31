@@ -1,0 +1,35 @@
+Txn-id: paypal-1456922439-5bd7
+
+----
+
+Txn-date: 1456922439
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Under Copenhagen - medium (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 0.00
+
+----
+
+Shipping-method: Free Shipping
+
+----
+
+Tax: 0.00

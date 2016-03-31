@@ -1,0 +1,79 @@
+Title: Cash Ruins Everything
+
+----
+
+Text: Cash Ruins Everything Around Me graphic t-shirt. Wu Tang inspired design realting to the everyday struggles of money and life.
+
+----
+
+Tags: wutang,tshirt,black
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: underground
+- 
+  product: london-haze
+- 
+  product: cid
+- 
+  product: deps-5-panel
+
+----
+
+Variants: 
+
+- 
+  name: small
+  price: 25
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Medium
+  price: 25
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+- 
+  name: Large
+  price: 25
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+- 
+  name: Extra-Large
+  price: 25
+  sku:
+  weight:
+  stock: 5
+  options:
+  description:
+
+----
+
+Soldout: 
+
+----
+
+Seotitle: Cash Ruins Everything Around Me Wu Tang graphic tshirt design
+
+----
+
+Seodesc: Cash Ruins Everything Me Wu Tang inspired graphic design t-shirt. Minty green front screen print on black shirt

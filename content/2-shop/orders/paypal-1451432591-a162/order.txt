@@ -1,0 +1,37 @@
+Txn-id: paypal-1451432591-a162
+
+----
+
+Txn-date: 1451432591
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: Cash Ruins Everything - large (1)
+
+----
+
+Subtotal: 25.00
+
+----
+
+Shipping: 15.00
+
+----
+
+Shipping-method: US/Canada Air Mail
+
+----
+
+Tax: 0.00
+
+----
+
+Encoded-items: a%3A1%3A%7Bi%3A0%3Ba%3A3%3A%7Bs%3A3%3A%22uri%22%3Bs%3A34%3A%22shop%2FTshirts%2Fcash-ruins-everything%22%3Bs%3A7%3A%22variant%22%3Bs%3A5%3A%22large%22%3Bs%3A8%3A%22quantity%22%3Bi%3A1%3B%7D%7D

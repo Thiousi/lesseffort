@@ -1,0 +1,27 @@
+Title: Contact
+
+----
+
+Text: 
+
+Find us on the usual networks or email (email: info@lesseffort.co.uk text:info@lesseffort.o.uk )
+<ul class="contact">
+						<li><a href="https://www.facebook.com/lesseffortbrand"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://instagram.com/lesseffortclothing"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/user/lessefforttv/videos"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://twitter.com/lesseffortbrand"><i class="fa fa-twitter"></i></a></li>
+</ul>
+
+Fill in the form below and we will respond as soon as possible.
+
+----
+
+Phone: 
+
+----
+
+Email: info@lesseffort.co.uk
+
+----
+
+Location: {"address":"","lat":"","lng":""}

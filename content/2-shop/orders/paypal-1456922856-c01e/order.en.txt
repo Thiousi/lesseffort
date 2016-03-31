@@ -1,0 +1,35 @@
+Txn-id: paypal-1456922856-c01e
+
+----
+
+Txn-date: 1456922856
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+London Haze - extra-large (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 15.00
+
+----
+
+Shipping-method: US/Canada Air Mail
+
+----
+
+Tax: 0.00

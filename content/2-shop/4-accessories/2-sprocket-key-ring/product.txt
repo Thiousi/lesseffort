@@ -1,0 +1,43 @@
+Title: Sprocket Key ring
+
+----
+
+Text: 
+
+----
+
+Tags: accessory,keyring
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 
+
+----
+
+Relatedproducts: 
+
+- 
+  product: cid
+- 
+  product: underground
+- 
+  product: classic-beanie-mustard
+- 
+  product: classic-beanie-green
+
+----
+
+Variants: 
+
+- 
+  name: Key Ring
+  price: 5
+  sku:
+  weight:
+  stock: 29
+  options:
+  description:

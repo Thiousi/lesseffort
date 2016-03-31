@@ -1,0 +1,17 @@
+Title: Less Effort 2.0
+
+----
+
+Text: 
+
+Welcome to the new Less Effort site. This site is built from scratch and features loads of new stock in the shop and a fresh new design.
+The site is built on Kirby CMS, which is a rather splendid CMS that is lightweight, fast and easy to use. The shop runs on CartKit - an ecommerce solution
+for Kirby. 
+
+The site is responsive on any device you visit on. Mobile is more minimal and has more of an app-like feel.
+If any of the site looks broken, then you probably need to update your browser (or swap from using Internet Explorer, naughty!) 
+Feedback on the site and design would be great in the comments, or on twitter
+
+----
+
+Tags: News,Releases,Clothing,Music

@@ -1,0 +1,71 @@
+Title: Classic Sweat Black
+
+----
+
+Text: 
+
+----
+
+Tags: 
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: classic-sweat-burgandy
+- 
+  product: above-below-pack
+- 
+  product: deps-5-panel
+- 
+  product: sprocket-key-ring
+
+----
+
+Variants: 
+
+- 
+  name: small
+  price: 30
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+- 
+  name: Medium
+  price: 30
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+- 
+  name: Large
+  price: 30
+  sku:
+  weight:
+  stock: 0
+  options:
+  description:
+- 
+  name: Extra-Large
+  price: 30
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+
+----
+
+Soldout: 

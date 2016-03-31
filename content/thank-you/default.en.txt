@@ -1,0 +1,5 @@
+Title: thank-you
+
+----
+
+Text: Thanks for your enquiry.(link: / text:  Click here to return to the homepage.)

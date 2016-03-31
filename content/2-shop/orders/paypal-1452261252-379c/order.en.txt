@@ -1,0 +1,35 @@
+Txn-id: paypal-1452261252-379c
+
+----
+
+Txn-date: 1452261252
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+Classic Sweat Black - extra-large (1)
+
+----
+
+Subtotal: 30.00
+
+----
+
+Shipping: 3.00
+
+----
+
+Shipping-method: Royal Mail UK
+
+----
+
+Tax: 0.00

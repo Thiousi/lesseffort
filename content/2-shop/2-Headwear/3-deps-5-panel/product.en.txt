@@ -1,0 +1,68 @@
+Title: Deps 5 Panel
+
+----
+
+Text: 
+
+Custom 5 panel hat, front script and type block by Deps. 
+Made from High Quality Polyester Suede.
+
+Crown;
+Front Panel: Navy
+Side Right Panel: Light Tan
+Side Left Panel: Light Tan
+2 Top Panels: Light Tan
+
+Brim Top: Light Tan
+Brim Bottom: Light Tan
+Back Enclosure: Black Nylon strap with black plastic buckle
+
+----
+
+Tags: 
+
+----
+
+Noshipping: 
+
+----
+
+Notax: 1
+
+----
+
+Relatedproducts: 
+
+- 
+  product: cash-ruins-everything
+- 
+  product: cid
+- 
+  product: sprocket-key-ring
+- 
+  product: underground
+
+----
+
+Soldout: 
+
+----
+
+Variants: 
+
+- 
+  name: 5-Panel
+  price: 30
+  sku:
+  weight:
+  stock: 10
+  options:
+  description:
+
+----
+
+Seotitle: Less Effort 5 Panel Script Deps graffiti
+
+----
+
+Seodesc: Custom 5 panel hat, front script and type block by Deps.

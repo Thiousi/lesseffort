@@ -1,0 +1,35 @@
+Txn-id: paypal-1452081849-03f3
+
+----
+
+Txn-date: 1452081849
+
+----
+
+Txn-currency: GBP
+
+----
+
+Status: pending
+
+----
+
+Products: 
+
+CID - small (1)
+
+----
+
+Subtotal: 28.00
+
+----
+
+Shipping: 0.00
+
+----
+
+Shipping-method: Free Shipping
+
+----
+
+Tax: 0.00

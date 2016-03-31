@@ -1,0 +1,85 @@
+Title: Above & Below Pack
+
+----
+
+Text: 
+
+(link: ../london-haze text: London Haze) and (link: ../underground  text: Copenhagen Underground) t-shirt pack.
+
+Select size below for BOTH tshirts in that size!
+
+FREE POSTAGE JAN 2016
+
+----
+
+Variants: 
+
+- 
+  name: Small
+  price: 50
+  sku:
+  weight:
+  stock: 3
+  options:
+  description:
+- 
+  name: Medium
+  price: 50
+  sku:
+  weight:
+  stock: 2
+  options:
+  description:
+- 
+  name: Large
+  price: 50
+  sku:
+  weight:
+  stock: 3
+  options:
+  description:
+- 
+  name: Extra-Large
+  price: 50
+  sku:
+  weight:
+  stock: 3
+  options:
+  description:
+
+----
+
+Noshipping: 1
+
+----
+
+Notax: 1
+
+----
+
+Tags: 
+
+----
+
+Relatedproducts: 
+
+- 
+  product: underground
+- 
+  product: london-haze
+- 
+  product: cash-ruins-everything
+- 
+  product: deps-5-panel
+
+----
+
+Soldout: 
+
+----
+
+Seotitle: Above and Below tshirt Pack. Rooftopping metro graffiti cranes
+
+----
+
+Seodesc: Set of 2 tshirts with rooftopping and metro sublimation photo prints
